@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Git и GitHub, HTML, CSS: основные понятия
+    </h1>
+</header>
+<h2>Git и GitHub</h2>
+<p>Кратко о Git:</p>
+<ol>
+    <li>Git может отслеживать изменения, внесенные в код, синхронизировать код между разными людьми, тестировать изменения в коде без потери оригинала и возвращаться к старым версиям кода.</li>
+    <li>GitHub — это веб-сайт, на котором хранятся репозитории Git в Интернете, чтобы облегчить сотрудничество, которое позволяет Git. Репозиторий — это просто место для отслеживания кода и всех изменений в коде.</li>
+    <li>Git команды:
+        <ul>
+            <li><span>git clone &lt;url&gt;</span>: возьмите репозиторий, хранящийся на сервере (например, GitHub), и загрузите его</li>
+            <li><span>git add &lt;filename(s)&gt;</span>: добавить файлы в промежуточную область для включения в следующий коммит</li>
+            <li><span>git commit -m &#171;message&#187;</span>: сделайте снимок репозитория и сохраните его с сообщением об изменениях</li>
+            <li><span>git commit -am &lt;filename(s)&gt; &#171;message&#187;</span>: добавлять файлы и фиксировать изменения в одном</li>
+            <li><span>git status</span>: печать того, что в данный момент происходит с хранилищем</li>
+            <li><span>git push</span>: отправлять любые локальные изменения (коммиты) на удаленный сервер</li>
+            <li><span>git pull</span>: вытащить все удаленные изменения с удаленного сервера на локальный компьютер</li>
+            <li><span>git log</span>: распечатать историю всех коммитов, которые были сделаны</li>
+            <li><span>git reflog</span>: распечатать список всех ссылок на коммиты</li>
+            <li><span>git reset &#8212;hard &lt;commit&gt;</span>: сбросить хранилище до данного коммита</li>
+            <li><span>git reset —hard origin/master</span>: сбросить репозиторий в исходное состояние (например, версию, клонированную из GitHub)</li>
+        </ul>
+    <li>При объединении разных версий кода, например, при использовании git pull, может возникнуть конфликт слияния, если разные версии имеют разные данные в одном и том же месте. Git попытается позаботиться о слиянии автоматически, но если два пользователя редактируют, например, одну и ту же строку, конфликт слияния придется разрешать вручную.
+            Чтобы разрешить конфликт слияния, просто локально удалите все ненужные строки и код и отправьте результаты.</li>
+</ol>
+<h2>
+    HTML
+</h2>
+<p>Кратко о <strong>HTML:</strong>
+</p>
+<ol>
+    <li><strong>HTML</strong> (язык разметки гипертекста) используется для разметки структуры веб-страницы.</li>
+    <li><span>&lt;!DOCTYPE html&gt;</span>помещается в начале файла HTML, чтобы указать браузеру, что используется HTML5.</li>
+    <li><strong><span>HTML</span></strong> состоит из тегов.Теги обычно идут парами, а данные находятся между тегами.Как правило, теги имеют отступ, чтобы помочь визуализировать их иерархию, но любой отступ является чисто стилистическим.&nbsp;Теги также могут иметь атрибуты, которые являются полями данных, иногда обязательными, а иногда и необязательными, которые предоставляют браузеру дополнительную информацию о том, как отображать данные.</li>
+    <li>Некоторые общие теги HTML:
+        <ul>
+            <li><span>&lt;html&gt;&lt;/html&gt;</span>: содержимое сайта;</li>
+            <li><span>&lt;head&gt;&lt;/head&gt;</span>: метаданные о странице, полезные для браузера при отображении страницы;</li>
+            <li><span>&lt;title&gt;&lt;/title&gt;</span>: название страницы;</li>
+            <li><span>&lt;body&gt;&lt;/body&gt;</span>: тело (всё содержимое) страницы;</li>
+            <li><span>&lt;h1&gt;&lt;/h1&gt;</span> : заголовок (h1 -; самый большой заголовок, h6 - самый маленький заголовок);</li>
+            <li><span>&lt;ul&gt;&lt;/ul&gt;</span>&nbsp;: неупорядоченный список</li>
+            <li><span>&lt;ol&gt;&lt;/ol&gt;</span>&nbsp;: упорядоченный список
+                <ul>
+                    <li><span>&lt;li&gt;&lt;/li&gt;</span>: <em>Элемент списка (должен быть внутри либо&nbsp;</em><span>&lt;ul&gt;&lt;/ul&gt; </span><em>или</em>&nbsp;<span>&lt;ol&gt;&lt;/ol&gt;</span>)</li>
+                </ul>
+            </li>
+            <li><span>&lt;img src=&#187;path/to/img.jpg&#187; height=&#187;200&#8243; width=&#187;300&#8243;&gt;</span>: изображение хранится в src атрибуте, который также может быть URL:
+                <ul style>
+                    <li><em>обратите внимание, что это один тег без конечного тега;</em></li>
+                    <li><em>и&nbsp; </em><span>height,</span><em> и </em><span>width</span><em> не обязательно (если оно опущено, браузер автоматически изменит размер изображения); также можно использовать процент:</em> <span>height=50%</span> <em>для автоматического масштабирования изображения до определенной части страницы.</em></li>
+                </ul>
+            </li>
+            <li><span>&lt;table&gt;&lt;/table&gt;</span>: таблица:
+                <ul>
+                    <li><span>&lt;th&gt;&lt;/th&gt;</span>:<em> заголовок таблицы;</em></li>
+                    <li><span>&lt;tr&gt;&lt;/tr&gt;</span>: <em>строка таблицы;</em></li>
+                    <li><span>&lt;td&gt;&lt;/td&gt;</span>: <em>данные таблицы (ячейка).</em></li>
+                </ul>
+            </li>
+            <li><span>&lt;form&gt;&lt;/form&gt;</span>: форма, которая может быть заполнена и отправлена пользователем:
+                <ul>
+                    <li><span>&lt;input type=&#187;text&#187; placeholder=&#187;Full Name&#187; name=&#187;name&#187;&gt;</span>: <em>поле ввода:</em>
+                        <ul>
+                            <li><span>type</span> указывает тип данных;</li>
+                            <li><span>placeholder</span> отображается серым цветом перед заполнением поля;</li>
+                            <li><span>name</span> идентификатор поля ввода;</li>
+                        </ul>
+                    </li>
+                    <li><span>&lt;button&gt;&lt;/button&gt;</span>: кнопка, используемая для отправки формы.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Объектная модель документа &#8212; это способ концептуализации веб-страниц путем представления их в виде взаимосвязанной иерархии узлов.&nbsp;В HTML узлами DOM будут различные теги и содержащиеся в них данные, причем&nbsp;&lt;html&gt;&lt;/html&gt;тег находится в самой верхней части дерева.&nbsp;Хотя на первый взгляд это может показаться немного неинтуитивным, эта модель станет очень полезной в будущем.</li>
+</ol>
+<h2>
+    CSS
+</h2>
+<p>Кратко о каскадных таблицах стилей:
+</p>
+<ul>
+    <li><span><strong>CSS</strong></span> (каскадные таблицы стилей) &#8212; это язык, используемый для взаимодействия и стилизации <span>HTML</span>, изменяющий его внешний вид в соответствии с рядом правил.&nbsp;<span>CSS</span> делает сайты красивыми.</li>
+    <li><span>CSS</span> может быть применен к <span>HTML</span> различными способами:
+        <ul>
+            <li>Атрибут <span>style</span>: <strong><span><span>&lt;h5</span><span> style</span><span>=&#187;</span><span>color</span>:blue;<span>text-align</span>:center<span>;&#187;&gt;&lt;/h5&gt;</span></span></strong>
+                <ul>
+                    <li>Передаваемые через точку с запятой свойства CSS <span>style</span> будут применяться ко всему, что содержится в теге.</li>
+                </ul>
+            </li>
+            <li>В тегах <span>&lt;style&gt;&lt;/style&gt;</span>: <span><em>это полезная парадигма для использования при многократном повторении одного и того же стиля на странице. Перечисленные свойства будут применяться ко всем перечисленным тегам.</em></span></li>
+            <li>Отдельный <strong><span>.css</span></strong> файл: добавьте <strong><span>&lt;link rel=&#187;stylesheet&#187; href=&#187;path/to/styles.css&#187;&gt; </span></strong>в заголовок и переместите код в отдельный файл CSS (тот же формат, который используется внутри <span>&lt;style&gt;&lt;/style&gt;</span>тегов).
+                <ul style="list-style-type: circle;">
+                    <li><em><span>Часто это даже лучшая парадигма, потому что она разделяет две совершенно разные вещи: структуру (HTML) и стиль (CSS), и в то же время его легче управлять и читать.</span></em></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Некоторые общие свойства <span>CSS</span> (те, которые принимают аргументы в пикселях, часто могут принимать процент или просто&nbsp;<strong><span>auto</span></strong>):
+        <ul style="list-style-type: square;">
+            <li><strong><span><span>color:</span> blue,<span>&nbsp;color:</span> #0c8e05</span></strong>: может быть 1 из ~ 140 именованных цветов или иметь шестнадцатеричное значение, представляющее значение RGB.</li>
+            <li><strong><span >text-align: <span>left</span></span></strong>: выравнивает текст по <span>left</span>; другие возможные аргументы <span>center, right</span> или <span>justify</span>.</li>
+            <li><strong>background-color: <span>teal</span></strong>: устанавливает цвет фона в том же формате, что и свойство <span>color.</span></li>
+            <li><strong><span>height: 150px</span></strong>: устанавливает высоту области.</li>
+            <li><strong><span>width: 150px</span></strong>: устанавливает ширину области.</li>
+            <li><strong><span>margin: <span>30px</span></span></strong>: устанавливает поле вокруг всех четырех сторон области.
+                <ul style="list-style-type: circle;">
+                    <li>также могут быть разбиты на&nbsp;<span><strong>margin-left</strong></span>,&nbsp;<strong><span>margin-right</span></strong>, <strong><span>margin-top</span></strong> и <strong><span>margin-bottom</span></strong>.</li>
+                </ul>
+            </li>
+            <li><strong><span>padding: <span>20px</span></span></strong> : устанавливает отступ вокруг текста внутри области.
+                <ul style="list-style-type: circle;">
+                    <li>можно разбить так же, как <strong>margin</strong>.</li>
+                </ul>
+            </li>
+            <li><strong>font-family: <span>Arial, sans-serif</span></strong>: устанавливает семейство шрифтов, которое будет использоваться:
+                <ul style="list-style-type: circle;">
+                    <li>разделенный запятыми список предоставляет альтернативы в случае, если браузер не поддерживает определенный шрифт;</li>
+                    <li>общие семейства, такие как <span>sans-serif</span> будут использовать настройки браузера по умолчанию.</li>
+                </ul>
+            </li>
+            <li><span><strong><span>font-size:</span> 28px</strong></span>: устанавливает размер шрифта.</li>
+            <li><strong><span>font-weight: <span>bold</span></span></strong>: устанавливает вес (&#171;жирность&#187;) шрифта в качестве (<span>bold</span>), относительной мере (<span>lighter</span>) или числе (<span>200</span>).</li>
+            <li><span><strong>border: <span>3px solid blue</span></strong></span>: устанавливает границу вокруг области.</li>
+        </ul>
+    </li>
+    <li>Существует множество свойств CSS, которые можно использовать по-разному.
+    </li>
+</ul>
+<h2>
+    Секционирование с помощью HTML и CSS
+</h2>
+<ul>
+    <li>Два специальных тега позволяют разбить веб-страницу на разделы:
+        <ul style="list-style-type: circle;">
+            <li><span>&lt;div&gt;&lt;/div&gt;</span>: вертикальное разделение веб-страницы.</li>
+            <li><span>&lt;span&gt;&lt;/span&gt;</span>: раздел веб-страницы внутри, например, текста.</li>
+        </ul>
+    </li>
+    <li>И <span>&lt;div&gt;&lt;/div&gt;</span>, и <span>&lt;span&gt;&lt;/span&gt; <span style="color: #333333;">на</span> </span>самом деле мало что делает, но они позволяют маркировать разделы веб-страницы.</li>
+    <li>Можно ссылаться на различные разделы веб &#8212; страницы при помощи атрибутов <strong><span>id</span></strong> и <strong><span>class</span></strong>. Атрибуты <span>id</span> уникально идентифицируют элементы. Может быть произвольное количество элементов одного <span>id</span> с разными данным <span>class</span>.</li>
+    <li>На <strong><span>id</span></strong> можно ссылаться в <span>CSS</span> с помощью <strong><span>#id</span></strong>, а на <strong><span>class</span></strong> можно ссылаться при помощи <strong><span>.class</span></strong>. Поэтому <span>id</span> и <span>class</span> можно использовать для стилизации одних и тех же типов областей (например, 3 разных <span>&lt;div&gt;&lt;/div&gt;</span>) различными способами.</li>
+</ul>
+<h2>
+    GitHub Pages
+</h2>
+<ul>
+    <li>GitHub Pages &#8212; это функция GitHub, которая позволяет развертывать хранилище в Интернете.</li>
+    <li>Просто выделите&nbsp;<strong>GitHub Pages в</strong> разделе «<strong>Настройки»</strong>, выберите&nbsp;<strong>основную ветку</strong> и нажмите «<strong>Сохранить»</strong>.</li>
+    <li>По умолчанию хранилище будет развернуто по адресу <span>username.github.io/repository</span>.</li>
+    <li>GitHub Pages автоматически обновляется при обновлении хранилища.</li>
+</ul>
+<p>Видео, как загрузить и установить Git и создать первый репозиторий на GitHub:</p>
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+    <div class="wp-block-embed__wrapper">
+        <iframe title="Git: установка в Windows и публикация репозитория на GitHub [2018]" width="660" height="371" src="https://www.youtube.com/embed/qt-QDN3MyeM?feature=oembed" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</figure>
+<p>Или в цикле статей <a rel="noreferrer noopener" aria-label="Git (откроется в новой вкладке)" href="https://htmlacademy.ru/blog/useful/git" target="_blank">Git</a> на сайте  <strong>htmlacademy.ru</strong>.</p>
+
+
+</body>
+</html>
