@@ -1,0 +1,37 @@
+body{
+    background: #241e5e;
+}
+header{
+    display: grid;
+    background: #5a53a6;
+    font-family: "Footlight MT Light";
+    justify-items: center;
+}
+h2{
+    display: grid;
+    justify-items: center;
+    font-family: "Footlight MT Light";
+    background: #5a53a6;
+}
+.section{
+    background: #5a53a6;
+    margin: 5px;
+}
+p{
+    margin: 5px;
+}
+span{
+    color: #d0d400;
+
+}
+ol{
+    margin: 10px;
+}
+.font{
+    font-family: Tahoma;
+}
+.font{
+    display: grid;
+    justify-items: center;
+}
+
