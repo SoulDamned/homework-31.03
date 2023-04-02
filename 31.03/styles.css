@@ -6,6 +6,7 @@ header{
     background: #5a53a6;
     font-family: "Footlight MT Light";
     justify-items: center;
+    text-align: center;
 }
 h2{
     display: grid;
@@ -33,5 +34,76 @@ ol{
 .font{
     display: grid;
     justify-items: center;
+}
+
+.containergit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.containerhtml, .containercss {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.gitlogo, .githublogo, .htmllogo, .csslogo {
+    background-size: cover;
+    /* border: 1px solid black; */
+}
+
+.logotext {
+    font-family: Tahoma;
+    font-size: small;
+    text-align: center;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; 
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.wp-block-embed__wrapper iframe {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 360px) {
+    .containergit {
+        grid-template-columns: 1fr;
+    }
+    .font{
+        font-size: small;
+    }
+    .logotext {
+        font-size: x-small;
+    }
+    ul, li {
+        margin-left: 0;
+        padding-left: 1px;
+    }
+    h1 {
+        font-size: 100%; 
+    }
+    h2 {
+        font-size: 100%; 
+    }   
+}
+
+@media screen and (min-width: 360px) and (max-width: 800px) {
+    .containergit {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 150%; 
+    }
+    h2 {
+        font-size: 135%; 
+    }
 }
 

@@ -15,6 +15,20 @@
 </header>
 <section class="section"><hr>
     <h2>Git и GitHub</h2><hr>
+    <div class="containergit">
+        <div class="logo">
+            <div class="gitlogo">
+                <img src="images/Git_logo.png" alt="Логотип Git">
+            </div>
+            <div class="logotext">Логотип Git</div>
+        </div>
+            <div class="logo">
+                <div class="githublogo">
+                    <img src="images/GitHub-logo.png" alt="Логотип GitHub">
+                </div>
+                <div class="logotext">Логотип GitHub</div>
+            </div>
+    </div>
     <div class="font">
         <p><strong>Кратко о Git:</strong></p>
         <ol>
@@ -43,10 +57,17 @@
     <h2>
         HTML
     </h2><hr>
+    <div class="containerhtml">
+        <div class="logo">
+            <div class="htmllogo">
+                <img src="images/HTML_logo.png" alt="Логотип HTML">
+            </div>
+            <div class="logotext">Логотип HTML</div>
+        </div>
+    </div>
     <div class="font">
-        <p>Кратко о <strong>HTML:</strong>
+        <p><strong>Кратко о HTML:</strong>
         </p>
-
         <ol>
             <li><strong>HTML</strong> (язык разметки гипертекста) используется для разметки структуры веб-страницы.</li>
             <li><strong>&lt;!DOCTYPE html&gt;</strong>помещается в начале файла HTML, чтобы указать браузеру, что используется HTML5.</li>
@@ -96,60 +117,70 @@
     </div><hr>
 </section>
 <section class="section"><hr>
+    <div class="containercss">
+        <div class="logo">
+            <div class="csslogo">
+                <img src="images/CSS_logo.png" alt=">Логотип CSS">
+            </div>
+            <div class="logotext">Логотип CSS</div>
+        </div>
+    </div>    
     <h2>
         CSS
     </h2><hr>
     <div class="font">
         <p>Кратко о каскадных таблицах стилей:
         </p>
-        <ul>
-            <li><strong>CSS</strong> (каскадные таблицы стилей) &#8212; это язык, используемый для взаимодействия и стилизации <strong>HTML</strong>, изменяющий его внешний вид в соответствии с рядом правил.&nbsp;<strong>CSS</strong> делает сайты красивыми.</li>
-            <li><strong>CSS</strong> может быть применен к <strong>HTML</strong> различными способами:
-                <ul>
-                    <li>Атрибут <span>style</span>: <strong><span><span>&lt;h5</span><span> style</span><span>=&#187;</span><span>color</span>:blue;<span>text-align</span>:center<span>;&#187;&gt;&lt;/h5&gt;</span></span></strong>
-                        <ul>
-                            <li>Передаваемые через точку с запятой свойства CSS <span>style</span> будут применяться ко всему, что содержится в теге.</li>
-                        </ul>
-                    </li>
-                    <li>В тегах <span>&lt;style&gt;&lt;/style&gt;</span>: <span><em>это полезная парадигма для использования при многократном повторении одного и того же стиля на странице. Перечисленные свойства будут применяться ко всем перечисленным тегам.</em></span></li>
-                    <li>Отдельный <strong><span>.css</span></strong> файл: добавьте <strong><span>&lt;link rel=&#187;stylesheet&#187; href=&#187;path/to/styles.css&#187;&gt; </span></strong>в заголовок и переместите код в отдельный файл CSS (тот же формат, который используется внутри <span>&lt;style&gt;&lt;/style&gt;</span>тегов).
-                        <ul style="list-style-type: circle;">
-                            <li><em><span>Часто это даже лучшая парадигма, потому что она разделяет две совершенно разные вещи: структуру (HTML) и стиль (CSS), и в то же время его легче управлять и читать.</span></em></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>Некоторые общие свойства <span>CSS</span> (те, которые принимают аргументы в пикселях, часто могут принимать процент или просто&nbsp;<strong><span>auto</span></strong>):
-                <ul style="list-style-type: square;">
-                    <li><strong><span><span>color:</span> blue,<span>&nbsp;color:</span> #0c8e05</span></strong>: может быть 1 из ~ 140 именованных цветов или иметь шестнадцатеричное значение, представляющее значение RGB.</li>
-                    <li><strong><span >text-align: <span>left</span></span></strong>: выравнивает текст по <span>left</span>; другие возможные аргументы <span>center, right</span> или <span>justify</span>.</li>
-                    <li><strong><span>background-color:</span> <span>teal</span></strong>: устанавливает цвет фона в том же формате, что и свойство <span>color.</span></li>
-                    <li><strong><span>height: 150px</span></strong>: устанавливает высоту области.</li>
-                    <li><strong><span>width: 150px</span></strong>: устанавливает ширину области.</li>
-                    <li><strong><span>margin: <span>30px</span></span></strong>: устанавливает поле вокруг всех четырех сторон области.
-                        <ul style="list-style-type: circle;">
-                            <li>также могут быть разбиты на&nbsp;<span><strong>margin-left</strong></span>,&nbsp;<strong><span>margin-right</span></strong>, <strong><span>margin-top</span></strong> и <strong><span>margin-bottom</span></strong>.</li>
-                        </ul>
-                    </li>
-                    <li><strong><span>padding: <span>20px</span></span></strong> : устанавливает отступ вокруг текста внутри области.
-                        <ul style="list-style-type: circle;">
-                            <li>можно разбить так же, как <strong><span>margin</span></strong>.</li>
-                        </ul>
-                    </li>
-                    <li><strong><span>font-family:</span> <span>Arial, sans-serif</span></strong>: устанавливает семейство шрифтов, которое будет использоваться:
-                        <ul style="list-style-type: circle;">
-                            <li>разделенный запятыми список предоставляет альтернативы в случае, если браузер не поддерживает определенный шрифт;</li>
-                            <li>общие семейства, такие как <span>sans-serif</span> будут использовать настройки браузера по умолчанию.</li>
-                        </ul>
-                    </li>
-                    <li><span><strong><span>font-size:</span> 28px</strong></span>: устанавливает размер шрифта.</li>
-                    <li><strong><span>font-weight: <span>bold</span></span></strong>: устанавливает вес (&#171;жирность&#187;) шрифта в качестве (<span>bold</span>), относительной мере (<span>lighter</span>) или числе (<span>200</span>).</li>
-                    <li><span><strong>border: <span>3px solid blue</span></strong></span>: устанавливает границу вокруг области.</li>
-                </ul>
+        <ol>
+            <ul>
+                <li><strong>CSS</strong> (каскадные таблицы стилей) &#8212; это язык, используемый для взаимодействия и стилизации <strong>HTML</strong>, изменяющий его внешний вид в соответствии с рядом правил.&nbsp;<strong>CSS</strong> делает сайты красивыми.</li>
+                <li><strong>CSS</strong> может быть применен к <strong>HTML</strong> различными способами:
+                    <ul>
+                        <li>Атрибут <span>style</span>: <strong><span><span>&lt;h5</span><span> style</span><span>=&#187;</span><span>color</span>:blue;<span>text-align</span>:center<span>;&#187;&gt;&lt;/h5&gt;</span></span></strong>
+                            <ul>
+                                <li>Передаваемые через точку с запятой свойства CSS <span>style</span> будут применяться ко всему, что содержится в теге.</li>
+                            </ul>
+                        </li>
+                        <li>В тегах <span>&lt;style&gt;&lt;/style&gt;</span>: <span><em>это полезная парадигма для использования при многократном повторении одного и того же стиля на странице. Перечисленные свойства будут применяться ко всем перечисленным тегам.</em></span></li>
+                        <li>Отдельный <strong><span>.css</span></strong> файл: добавьте <strong><span>&lt;link rel=&#187;stylesheet&#187; href=&#187;path/to/styles.css&#187;&gt; </span></strong>в заголовок и переместите код в отдельный файл CSS (тот же формат, который используется внутри <span>&lt;style&gt;&lt;/style&gt;</span>тегов).
+                            <ul style="list-style-type: circle;">
+                                <li><em><span>Часто это даже лучшая парадигма, потому что она разделяет две совершенно разные вещи: структуру (HTML) и стиль (CSS), и в то же время его легче управлять и читать.</span></em></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Некоторые общие свойства <span>CSS</span> (те, которые принимают аргументы в пикселях, часто могут принимать процент или просто&nbsp;<strong><span>auto</span></strong>):
+                    <ul style="list-style-type: square;">
+                        <li><strong><span><span>color:</span> blue,<span>&nbsp;color:</span> #0c8e05</span></strong>: может быть 1 из ~ 140 именованных цветов или иметь шестнадцатеричное значение, представляющее значение RGB.</li>
+                        <li><strong><span >text-align: <span>left</span></span></strong>: выравнивает текст по <span>left</span>; другие возможные аргументы <span>center, right</span> или <span>justify</span>.</li>
+                        <li><strong><span>background-color:</span> <span>teal</span></strong>: устанавливает цвет фона в том же формате, что и свойство <span>color.</span></li>
+                        <li><strong><span>height: 150px</span></strong>: устанавливает высоту области.</li>
+                        <li><strong><span>width: 150px</span></strong>: устанавливает ширину области.</li>
+                        <li><strong><span>margin: <span>30px</span></span></strong>: устанавливает поле вокруг всех четырех сторон области.
+                            <ul style="list-style-type: circle;">
+                                <li>также могут быть разбиты на&nbsp;<span><strong>margin-left</strong></span>,&nbsp;<strong><span>margin-right</span></strong>, <strong><span>margin-top</span></strong> и <strong><span>margin-bottom</span></strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong><span>padding: <span>20px</span></span></strong> : устанавливает отступ вокруг текста внутри области.
+                            <ul style="list-style-type: circle;">
+                                <li>можно разбить так же, как <strong><span>margin</span></strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong><span>font-family:</span> <span>Arial, sans-serif</span></strong>: устанавливает семейство шрифтов, которое будет использоваться:
+                            <ul style="list-style-type: circle;">
+                                <li>разделенный запятыми список предоставляет альтернативы в случае, если браузер не поддерживает определенный шрифт;</li>
+                                <li>общие семейства, такие как <span>sans-serif</span> будут использовать настройки браузера по умолчанию.</li>
+                            </ul>
+                        </li>
+                        <li><span><strong><span>font-size:</span> 28px</strong></span>: устанавливает размер шрифта.</li>
+                        <li><strong><span>font-weight: <span>bold</span></span></strong>: устанавливает вес (&#171;жирность&#187;) шрифта в качестве (<span>bold</span>), относительной мере (<span>lighter</span>) или числе (<span>200</span>).</li>
+                        <li><span><strong>border: <span>3px solid blue</span></strong></span>: устанавливает границу вокруг области.</li>
+                    </ul>
             </li>
             <li>Существует множество свойств CSS, которые можно использовать по-разному.
             </li>
         </ul>
+    </ol>
     </div><hr>
 </section>
 <section class="section"><hr>
@@ -157,17 +188,19 @@
         Секционирование с помощью HTML и CSS
     </h2><hr>
     <div class="font">
-        <ul>
-            <li>Два специальных тега позволяют разбить веб-страницу на разделы:
-                <ul style="list-style-type: circle;">
-                    <li><span>&lt;div&gt;&lt;/div&gt;</span>: вертикальное разделение веб-страницы.</li>
-                    <li><span>&lt;span&gt;&lt;/span&gt;</span>: раздел веб-страницы внутри, например, текста.</li>
-                </ul>
-            </li>
-            <li>И <span>&lt;div&gt;&lt;/div&gt;</span>, и <span>&lt;span&gt;&lt;/span&gt; <span style="color: #333333;">на</span> </span>самом деле мало что делает, но они позволяют маркировать разделы веб-страницы.</li>
-            <li>Можно ссылаться на различные разделы веб &#8212; страницы при помощи атрибутов <strong><span>id</span></strong> и <strong><span>class</span></strong>. Атрибуты <span>id</span> уникально идентифицируют элементы. Может быть произвольное количество элементов одного <span>id</span> с разными данным <span>class</span>.</li>
-            <li>На <strong><span>id</span></strong> можно ссылаться в <span>CSS</span> с помощью <strong><span>#id</span></strong>, а на <strong><span>class</span></strong> можно ссылаться при помощи <strong><span>.class</span></strong>. Поэтому <span>id</span> и <span>class</span> можно использовать для стилизации одних и тех же типов областей (например, 3 разных <span>&lt;div&gt;&lt;/div&gt;</span>) различными способами.</li>
-        </ul>
+        <ol>
+            <ul>
+                <li>Два специальных тега позволяют разбить веб-страницу на разделы:
+                    <ul style="list-style-type: circle;">
+                        <li><span>&lt;div&gt;&lt;/div&gt;</span>: вертикальное разделение веб-страницы.</li>
+                        <li><span>&lt;span&gt;&lt;/span&gt;</span>: раздел веб-страницы внутри, например, текста.</li>
+                    </ul>
+                </li>
+                <li>И <span>&lt;div&gt;&lt;/div&gt;</span>, и <span>&lt;span&gt;&lt;/span&gt; <span style="color: #333333;">на</span> </span>самом деле мало что делает, но они позволяют маркировать разделы веб-страницы.</li>
+                <li>Можно ссылаться на различные разделы веб &#8212; страницы при помощи атрибутов <strong><span>id</span></strong> и <strong><span>class</span></strong>. Атрибуты <span>id</span> уникально идентифицируют элементы. Может быть произвольное количество элементов одного <span>id</span> с разными данным <span>class</span>.</li>
+                <li>На <strong><span>id</span></strong> можно ссылаться в <span>CSS</span> с помощью <strong><span>#id</span></strong>, а на <strong><span>class</span></strong> можно ссылаться при помощи <strong><span>.class</span></strong>. Поэтому <span>id</span> и <span>class</span> можно использовать для стилизации одних и тех же типов областей (например, 3 разных <span>&lt;div&gt;&lt;/div&gt;</span>) различными способами.</li>
+            </ul>
+        </ol>
     </div><hr>
 </section>
 <section class="section"><hr>
@@ -175,12 +208,14 @@
         GitHub Pages
     </h2><hr>
     <div class="font">
-        <ul>
-            <li>GitHub Pages &#8212; это функция GitHub, которая позволяет развертывать хранилище в Интернете.</li>
-            <li>Просто выделите&nbsp;<strong>GitHub Pages в</strong> разделе «<strong>Настройки»</strong>, выберите&nbsp;<strong>основную ветку</strong> и нажмите «<strong>Сохранить»</strong>.</li>
-            <li>По умолчанию хранилище будет развернуто по адресу <span>username.github.io/repository</span>.</li>
-            <li>GitHub Pages автоматически обновляется при обновлении хранилища.</li>
-        </ul>
+        <ol>
+            <ul>
+                <li>GitHub Pages &#8212; это функция GitHub, которая позволяет развертывать хранилище в Интернете.</li>
+                <li>Просто выделите&nbsp;<strong>GitHub Pages в</strong> разделе «<strong>Настройки»</strong>, выберите&nbsp;<strong>основную ветку</strong> и нажмите «<strong>Сохранить»</strong>.</li>
+                <li>По умолчанию хранилище будет развернуто по адресу <span>username.github.io/repository</span>.</li>
+                <li>GitHub Pages автоматически обновляется при обновлении хранилища.</li>
+            </ul>
+    </ol>
     </div><hr>
 </section>
 <section class="section"><hr>
